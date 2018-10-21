@@ -1,23 +1,22 @@
 import turtle
 
-def draw_square():
-   # window screen
+def draw_shapes():
+    # window screen
     window = turtle.Screen()
     window.bgcolor("red")
     #turtle class and methods
     brad = turtle.Turtle()
     brad.shape("turtle")
     brad.color("Green")
-    brad.speed(2)
+    brad.speed(10)
+    count = 1
     #size of the circle and instructiona
     brad.forward(100)
-    brad.right(90)
-    brad.forward(100)
-    brad.right(90)
-    brad.forward(100)
-    brad.right(90)
-    brad.forward(100)
-    brad.right(90)
+
+    while(count <= 3):
+     brad.right(90)
+     brad.forward(100)
+     count = count + 1
     # Draw a circle
     bingo = turtle.Turtle()
     bingo.shape("arrow")
@@ -35,4 +34,4 @@ def draw_square():
 
 
     window.exitonclick()
-draw_square()
+draw_shapes()
